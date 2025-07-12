@@ -8,7 +8,7 @@ const DetailsCard = ({ course }) => {
     "/task3/react.png",
     "/task3/reaction.png",
     "/task3/Vuejs.png",
-    "/task3/group.png",
+    "/task3/Group.png",
   ];
   return (
     <div className="flex flex-col gap-14 py-12 px-16 min-w-[600px]">
@@ -87,10 +87,10 @@ const DetailsCard = ({ course }) => {
           transition={{ duration: 1 }}
           className="flex flex-col gap-1 mt-3 origin-top-left"
         >
-          <h1 className="font-bold text-[22px] md:text-[32px] font-outfit text-white">
+          <h1 className="font-bold text-[22px] md:text-[28px] font-outfit text-white">
             {course.title}
           </h1>
-          <h2 className="text-white font-outfit text-lg md:text-xl">
+          <h2 className="text-white font-outfit text-base md:text-lg">
             {course.description}
           </h2>
         </motion.div>

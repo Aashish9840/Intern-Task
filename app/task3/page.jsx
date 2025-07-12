@@ -54,11 +54,14 @@ const Page = () => {
             }}
           >
             {showDetails === index ? (
-              <motion.div key="expanded">
+              <motion.div key="expanded" className="z-20 orgin-top-right">
                 <DetailsCard course={course} />
               </motion.div>
             ) : (
-              <motion.div key="collapsed" className="flex flex-col gap-8">
+              <motion.div
+                key="collapsed"
+                className=" relative flex flex-col gap-8"
+              >
                 <motion.section
                   initial={{ rotate: 20, opacity: 0 }}
                   animate={{ rotate: 0, opacity: 1 }}
