@@ -60,11 +60,11 @@ const Page = () => {
             ) : (
               <motion.div key="collapsed" className="flex flex-col gap-8">
                 <motion.section
-                  initial={{ rotate: 10, opacity: 0 }}
+                  initial={{ rotate: 20, opacity: 0 }}
                   animate={{ rotate: 0, opacity: 1 }}
-                  exit={{ rotate: 10, opacity: 0 }}
-                  transition={{ duration: 1.5 }}
-                  className="relative w-full h-[300px]"
+                  exit={{ rotate: -20, opacity: 0 }}
+                  transition={{ duration: 1 }}
+                  className="relative w-full h-[300px] origin-bottom-left"
                 >
                   <div className="absolute left-[40%] h-full w-full transform -rotate-90">
                     <h1 className="font-extrabold text-[#C33241] text-2xl lg:text-3xl font-outfit">

@@ -60,14 +60,7 @@ const DetailsCard = ({ course }) => {
         ))}
       </motion.section>
       <section className=" flex items-start justify-center gap-10">
-        <motion.div
-          key="collapsed"
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -100, opacity: 0 }}
-          transition={{ duration: 1.5 }}
-          className="relative"
-        >
+        <div className="relative">
           <h1 className="text-white font-extrabold text-4xl lg:text-[140px] font-outfit">
             {course.Total}
           </h1>
@@ -84,15 +77,15 @@ const DetailsCard = ({ course }) => {
               />
             </svg>
           </p>
-        </motion.div>
+        </div>
 
         <motion.div
           key="content"
-          initial={{ rotate: 10, opacity: 0 }}
-          animate={{ rotate: 0, opacity: 1 }}
-          exit={{ rotate: 10, opacity: 0 }}
-          transition={{ duration: 1.5 }}
-          className="flex flex-col gap-1 mt-3"
+          initial={{ rotate: -60 }}
+          animate={{ rotate: 0 }}
+          exit={{ rotate: 60 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col gap-1 mt-3 origin-top-left"
         >
           <h1 className="font-bold text-[22px] md:text-[32px] font-outfit text-white">
             {course.title}
